@@ -1,0 +1,267 @@
+/* Corpo do site */
+body {
+	margin: 0;
+	padding: 0;
+	font: 17px Century Gothic;
+	background-color: #BFFFBB;
+	overflow-x: hidden;
+}
+/* Fim corpo do site */
+
+
+
+/* Banner de cabeçalho */
+header{
+	width: 100%;
+}
+
+.banner {
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+
+.banner h1 {
+	color:#FFF;
+	text-transform: uppercase;
+	line-height: 80px;
+	margin:0;
+	position: relative;
+}
+
+.banner h1::before {
+	height: 3px;
+    width: 70px;
+    margin-top: 150px;
+    background-color: #FFF;
+    content: '';
+    position: absolute;
+    float: left;
+    margin: 0 auto;
+    top: calc(50% + 25px);
+    left: calc(50% - 35px);
+}
+/* Fim do banner de cabeçalho */
+
+
+
+/* Campo de pesquisa */
+#divBusca{
+	float: left;
+	background-color: #fff;
+	border: solid 2px #C7C4C4;
+	border-radius: 10px;
+	width: 298px;
+	height: 32px;
+	margin-left: 32.5%;
+	padding: 0.5px;
+}
+
+#txtBusca{
+	float: left;
+	background-color: transparent;
+	padding-left: 5px; 
+	font-size: 15px;
+	border: none;
+	height: 32px;
+	width: 197px;
+}
+
+#btnBusca{
+	border: none;
+	float: left;
+	height: 32px;
+	border-radius: 0 7px 7px 0;
+	width: 65px;
+	font-weight: bold;
+	background: #BFFFBB;
+}
+
+#divBusca img{
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+/* Fim do campo de pesquisa */
+
+
+
+/* Espinha dorsal do site */
+section {
+	text-align: center;
+	background-color:#FFF;
+	overflow: hidden;
+	width: 90%;
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 20px 50px;
+	box-sizing: border-box;
+	border-top: 2px solid #872732;
+	margin-top: -2px;
+	position: relative;
+}
+
+section .col {
+	width: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+	font-size: 18px;
+	position: relative;
+	min-width: 300px;
+}
+
+
+
+/* Colunas */
+section .col h2 {
+	font-size: 22px;
+	clear: both;
+	cursor: default;
+}
+
+section .col p {
+	line-height: 25px;
+	font-weight: 100;
+}
+
+section .col h2::after {
+	height: 3px;
+    width: 50px;
+    margin-top: 150px;
+    background-color: #000;
+    content: '';
+    display: block;
+    margin: 0 auto;
+}
+
+.cont_colleft {
+	padding: 0px 0 5px 35px;
+	font: 17px Century Gothic;
+}
+
+.cont_colright {
+	padding: 20px 0 5px 15px;
+}
+
+#formlogin{
+	width: 310px;
+	height: 20px;
+}
+
+/* Fim das colunas */
+
+/* Fim da espinha dorsal */
+
+
+
+/* Botões */
+.btn{
+	background-color: black;
+	color: #FFF;
+	margin: 10px 15px 0px 0px;
+	font: bold 14px corbel, Courier, monospace;
+	text-decoration: none;
+	height: 30px;
+	padding: 8px;
+	letter-spacing: 1px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px #000;
+}
+
+.btn:hover{
+	background-color:#179809;
+}
+/* Fim dos botões */
+
+
+
+/* Imagem home */
+#imagem_home{
+	border:  2px solid black;
+	box-shadow: 1px 1px 6px black;
+	width: 600px;
+	height: 400px;
+	background-image: url("../IMG/fundo.jpg");
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+/* Fim da imagem home */
+
+
+
+/* Configurações gerais */
+img {
+	border: none;
+}
+
+hr {
+	clear: both;
+}
+
+h2{
+	font-size: 25px;
+	color: red;
+	text-decoration: bold;
+}
+
+li{
+	list-style-type:  none;
+}
+
+form{
+	text-align: left;
+}
+
+#formulario{
+	width: 350px;
+	height: 20px;
+}
+
+#formulario2{
+	width: 162px;
+	height: 20px;
+}
+
+#formulario3{
+	width: 355px;
+	height: 28px;
+}
+
+.titulo_msgcad{
+	font-size: 20px;
+	text-decoration: bold;
+}
+/* Fim das configurações gerais */
+
+#logo_pages{
+	color:#FFF;
+	font-size: 23px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-left: -55%;
+	text-decoration: none;
+	position: relative;
+}
+
+#divBuscaPgs{
+	float: left;
+	background-color: #fff;
+	border: solid 2px #C7C4C4;
+	border-radius: 10px;
+	width: 298px;
+	height: 32px;
+	margin-left: 63%;
+	margin-top: -55px;
+	padding: 0.5px;
+	position: absolute;
+}
+
+#divBuscaPgs img{
+	float: left;
+	width: 30px;
+	height: 30px;
+}

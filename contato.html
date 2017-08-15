@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+	<title>Gamer Collection</title>
+	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="IMG/fav.png" type="image/x-icon">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<link rel="stylesheet" href="CSS/estilo.css">
+	<link rel='stylesheet' id='googleFonts-css'  href='http://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic' type='text/css' media='all' />
+</head>
+
+<body>
+	<header>
+		<div class="banner">
+			<span id="logo_pages">GamerCollection</span>
+		</div>
+	</header>
+	
+	<div id="divBuscaPgs">
+		<img src="IMG/search3.png"/>
+		<input type="text" id="txtBusca" placeholder="Nome da coleção"/>
+		<button id="btnBusca">Buscar</button>
+	</div>
+	
+	
+	<section>
+	 
+		 <h2>[ Entre em contato ]</h2><br/><br/>
+            
+         <form action="envia.php" method="post" name="Contato">
+            
+         Seu nome: <input type="text" name="nome" placeholder="Insira aqui o seu nome" title="Insira o seu Nome" required/><br/>
+         Seu e-mail: <input type="email" name="email" placeholder="Insira aqui o seu e-mail" title="Insira o seu E-mail" required/><br/>
+         Mensagem: <textarea name="mensagem" maxlength="150" placeholder="Insira aqui a sua mensagem" required></textarea><br/>
+            
+         <input type="reset" name="limpar" value="Limpar dados" class="btnform" />
+            
+         <input type="submit" name="enviar" value="Enviar dados" class="btnform" />
+            
+         </form>
+		
+	
+		<hr>
+		<p>Copyright &copy; - by Fernando Rech</p>
+		
+	</section>
+	
+	<footer>
+		<p></p>
+	</footer>
+	
+</body>
+</html>
