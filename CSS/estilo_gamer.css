@@ -1,0 +1,187 @@
+/* Corpo do site */
+body {
+	margin: 0;
+	padding: 0;
+	font: 17px Century Gothic;
+	background-color: #BFFFBB;
+	overflow-x: hidden;
+}
+/* Fim corpo do site */
+
+
+
+/* Banner de cabeçalho */
+header{
+	width: 100%;
+}
+
+.banner {
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+/* Fim do banner de cabeçalho */
+
+
+
+/* Campo de pesquisa Páginas */
+#divBuscaPgs{
+	float: left;
+	background-color: #fff;
+	border: solid 2px #C7C4C4;
+	border-radius: 10px;
+	width: 298px;
+	height: 32px;
+	margin-left: 63%;
+	margin-top: -55px;
+	padding: 0.5px;
+	position: absolute;
+}
+
+#txtBusca{
+	float: left;
+	background-color: transparent;
+	padding-left: 5px; 
+	font-size: 15px;
+	border: none;
+	height: 32px;
+	width: 197px;
+}
+
+#btnBusca{
+	border: none;
+	float: left;
+	height: 32px;
+	border-radius: 0 7px 7px 0;
+	width: 65px;
+	font-weight: bold;
+	background: #BFFFBB;
+}
+
+#divBuscaPgs img{
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+/* Fim do campo de pesquisa */
+
+
+
+/* Espinha dorsal do site (Estrutura do site) */
+section {
+	text-align: center;
+	background-color:#FFF;
+	overflow: hidden;
+	width: 90%;
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 20px 50px;
+	box-sizing: border-box;
+	border-top: 2px solid #872732;
+	margin-top: -2px;
+	position: relative;
+}
+/* Fim da espinha dorsal */
+
+
+
+/* Botões */
+.btn{
+	background-color: black;
+	color: #FFF;
+	margin: 10px 15px 0px 0px;
+	font: bold 14px corbel, Courier, monospace;
+	text-decoration: none;
+	height: 30px;
+	padding: 8px;
+	letter-spacing: 1px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px #000;
+}
+
+.btn:hover{
+	background-color:#179809;
+}
+/* Fim dos botões */
+
+#logo_pages{
+	color:#FFF;
+	font-size: 23px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-left: -55%;
+	text-decoration: none;
+	position: relative;
+}
+
+
+/* Formulários */
+#formulario{
+	width: 350px;
+	height: 20px;
+}
+
+#formulario2{
+	width: 162px;
+	height: 20px;
+}
+
+#formulario3{
+	width: 355px;
+	height: 28px;
+}
+
+#formulario_contato{
+	width: 450px;
+	margin: 0 auto;
+	margin-top: -60px;
+}
+
+.campos_contatos{
+	width: 447px;
+	margin: 5px 0px;
+}
+
+#form_contatoarea{
+	width: 445px;
+	height: 170px;
+}
+
+.btnform{
+	width: 150px;
+	height: 40px;
+	float: left;
+	margin-left: 50px;
+}
+
+/* Fim dos Formulários */
+
+
+
+/* Configurações gerais */
+img {
+	border: none;
+}
+
+hr {
+	clear: both;
+}
+
+h2{
+	font-size: 25px;
+	color: red;
+	text-decoration: bold;
+}
+
+li{
+	list-style-type:  none;
+}
+
+form{
+	text-align: left;
+}
+
+/* Fim das configurações gerais */
