@@ -89,6 +89,24 @@ section {
 
 
 /* Botões */
+.link{
+	color: #fff;
+	text-decoration: none;
+}
+
+.link:hover{
+	color: dimgray;
+}
+
+.linkDois{
+	color: black;
+	text-decoration: none;
+}
+
+.linkDois:hover{
+	color: dimgray;
+}
+
 .btn{
 	background-color: black;
 	color: #FFF;
