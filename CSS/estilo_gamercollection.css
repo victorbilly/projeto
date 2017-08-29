@@ -137,7 +137,7 @@ section {
 
 
 /* Formulários */
-#formulario{
+.formulario{
 	width: 350px;
 	height: 20px;
 }

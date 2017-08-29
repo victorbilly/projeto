@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="IMG/fav.png" type="image/x-icon">
 	
 	<!-- Arquivo CSS -->
-	<link rel="stylesheet" href="CSS/estilo.css">
+	<link rel="stylesheet" href="CSS/estilo_gamercollection.css">
 	
 	<!-- Importar fonte do Google -->
 	<link href="http://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic" rel="stylesheet">
@@ -35,7 +35,7 @@
 	
 	
 	<section>
-		<form action="cadastro.html" method="post">
+		<form name="usuario" action="envia_form_cadastro.php" method="POST">
 			<h1>Cadastro do usuário:</h1>
 			<br />
 			<div id="cadastro">
@@ -44,7 +44,7 @@
      		<legend>Dados pessoais</legend>
 			<ul>
 				<li>Nome completo: *</li>
-				<li><input type="text" id="formulario" title="Informe o seu nome completo" required/></li>
+				<li><input type="text" class="formulario" name="nome" title="Informe o seu nome completo" required/></li>
 			</ul>
 			
 			<ul>
@@ -53,38 +53,42 @@
 				
 			<ul>
 				<li>Telefone:</li>
-				<li><input type="tel" id="formulario" placeholder="Colocar máscara, quando aprender" title="Informe o seu telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/></li>
+				<li><input type="tel" class="formulario" name="telefone" placeholder="(00)00000-0000" title="Informe o seu telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/></li>
 			</ul>
 			
+			
+			<!-- No banco deixei o genero como opcional, pois é boolean. E tbm criei esse input abaixo só para testes. -->
 			<ul>
-				<li>Gênero:
-				<input type="radio" name="cargo" value="1" checked /> Masculino
-				<input type="radio" name="cargo" value="2" /> Feminino</li>
+				<li>Gênero:</li>
+				<li><input type="text" class="formulario" name="genero" title="Informe o seu genero" required/></li>
 			</ul>
+			
+			
 				
 			<ul>
 				<li>Data de nascimento: *
-				<input type="date" id="formulario2" title="Informe sua data de nascimento" required/></li>
+				<input type="date" id="formulario2" name="dataNascimento" title="Informe sua data de nascimento" required/></li>
 			</ul>
 				
 			<ul>
 				<li>E-mail: *</li>
-				<li><input type="email" id="formulario" placeholder="email@exemplo.com.br" title="Informe o seu e-mail" required/></li>
+				<li><input type="email" class="formulario" name="email" placeholder="email@exemplo.com.br" title="Informe o seu e-mail" required/></li>
 			</ul>
 				
 			<ul>
 				<li>Senha: *</li>
-				<li><input type="password" id="formulario" minlength="8" maxlength="15" title="Defina a sua senha" required/></li>
+				<li><input type="password" class="formulario" minlength="8" maxlength="15" name="senha" title="Defina a sua senha" required/></li>
 			</ul>
-	
+			
+			<!-- Vou deixar o confirmar senha como comnentário, até conseguir validar ele com a senha digitada
 			<ul>
 				<li>Confirme sua senha: *</li>
-				<li><input type="password" id="formulario" minlength="8" maxlength="15" title="Confirme a sua senha" required/></li>
-			</ul>
+				<li><input type="password" class="formulario" minlength="8" maxlength="15" title="Confirme a sua senha" required/></li>
+			</ul>-->
 			
 			<ul>
 				<li>Web site:</li>
-				<li><input type="text" id="formulario" title="Informe o seu web site" required/></li>
+				<li><input type="text" class="formulario" name="website" title="Informe o seu web site" required/></li>
 			</ul>
 			
 			</fieldset>
@@ -96,58 +100,17 @@
 				
 			<ul>
 				<li>Nome da coleção: *</li>
-				<li><input type="text" id="formulario" title="Defina o nome da sua coleção" required/></li>
+				<li><input type="text" class="formulario" name="nomeColecao" title="Defina o nome da sua coleção" required/></li>
 			</ul>
 				
 			<ul>
 				<li>Plataforma favorita:</li>
-				<li><select name="Plataforma favorita:" id="formulario3">
-					<option></option>
-					<optgroup label="Computador">
-						<option value="valor1">Windows</option>
-						<option value="valor2">MAC</option>
-						<option value="valor3">Linux</option>
-					</optgroup>
-					<optgroup label="Nintendo">
-						<option value="valor1">Nintendinho</option>
-						<option value="valor2">Super Nintendo</option>
-						<option value="valor3">Nintendo 64</option>
-						<option value="valor4">Nintendo Wii</option>
-						<option value="valor7">Nintendo 3DS</option>
-						<option value="valor5">Nintendo Wii U</option>
-						<option value="valor8">Nintendo 2DS</option>
-						<option value="valor6">Nintendo Switch</option>
-					</optgroup>
-					<optgroup label="Sega">
-						<option value="valor1">Master System</option>
-						<option value="valor2">Mega Drive</option>
-						<option value="valor3">Game Gear</option>
-						<option value="valor4">Sega CD</option>
-						<option value="valor7">Sega 32X/option>
-						<option value="valor5">Sega Saturn</option>
-						<option value="valor8">Dreamcast</option>
-					</optgroup>
-					<optgroup label="Sony">
-						<option value="valor1">Playstation 1</option>
-						<option value="valor2">Playstation 2</option>
-						<option value="valor3">Playstation 3</option>
-						<option value="valor4">Playstation 4</option>
-					</optgroup>
-					<optgroup label="Microsoft">
-						<option value="valor1">Xbox</option>
-						<option value="valor2">Xbox 360</option>
-						<option value="valor3">Xbox One</option>
-					</optgroup>
-					<optgroup label="Outra plataforma">
-						<option value="valor1">Outra</option>
-					</optgroup>
-					</select>
-				</li>
+				<li><input type="text" class="formulario" name="plataformaFavorita" title="Informe seu jogo favorito" /></li>
 			</ul>
 				
 			<ul>
 				<li>Jogo favorito:</li>
-				<li><input type="text" id="formulario" title="Informe seu jogo favorito"/></li>
+				<li><input type="text" class="formulario" name="jogoFavorito" title="Informe seu jogo favorito" /></li>
 			</ul>
 				
 			<ul>
@@ -158,16 +121,18 @@
 				
 			</fieldset>
 				
-			<br>
-				
-			<div class="g-recaptcha" data-sitekey="6LeLLSkUAAAAAOrrI46nJJFf2gxfbitrQRtzfqYX"></div>
-				
-			<br>
-				
+			<br/>
+			
+			<input class="btn" type="submit" value="Cadastrar"/>
+			
+			<!--
 			<a href="cadastro.html" class="btn">Cadastrar</a><br><br><br>
+			-->
 			</div>
 			
 			</form>
+			
+			<br/>
 	
 			<hr>
 			<p>Copyright &copy; - by Fernando Rech</p>
