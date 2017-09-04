@@ -54,12 +54,13 @@
 		<div class="col">
 			<h2>Entrar na coleção:</h2>
 			<div class="col_left">
-				<form action="" method="post">
-					E-mail:<input type="text" class="formlogin"><br />
-					Senha:<input type="password" class="formlogin"><br />
+				<form action="actions/envia_form_login.php" method="post">
+					E-mail:<input type="text" name="email" class="formlogin"><br />
+					Senha:<input type="password" name="senha" class="formlogin"><br />
 					<input type="checkbox"><span id="manter_conectado">Mantenha-me conectado</span>
 					<br/><br/>
-					<a href="#" class="btn">Entrar</a>
+					<input type="submit" value="Entrar"/>
+					<!--<a href="#" class="btn">Entrar</a>-->
 				</form>	
 			</div>
 		</div>
@@ -67,7 +68,7 @@
 		<div class="col">
 			<h2>Criar nova coleção:</h2>
 			<div class="col_right">
-				<a href="cadastro.html" class="btn">Cadastrar</a>
+				<a href="cadastro.php" class="btn">Cadastrar</a>
 			</div>
 		</div>
 		

@@ -1,4 +1,4 @@
-<?php
+	<?php
 	$nome = $_POST['nome'];
 	$telefone = $_POST['telefone'];
 	$genero = $_POST['genero'];
@@ -11,19 +11,17 @@
 	$jogoFavorito = $_POST['jogoFavorito'];
 
 
-	include("conexao_banco.php");
+	include('../conexaobanco/conexao_banco.php');
 
 	$sql = mysql_query("INSERT INTO pessoa(nome, telefone, genero, dataNascimento, email, senha, website, nomeColecao, plataformaFavorita, jogoFavorito)
 	VALUES ('$nome', '$telefone', '$genero', '$dataNascimento', '$email', '$senha', '$website', '$nomeColecao', '$plataformaFavorita', '$jogoFavorito' )");
 
 	if ($sql){ //Verificar se foi cadastrado
 		
-		echo "<script> alert('Cadastrado com sucesso!')
-			window.location = 'index.html';
+		echo "<script>
+				window.location = '../cadastro_concluido.html';
 			</script>";
 	}else{
 		echo "Falha ao cadastrar!" . mysql_error();
-		
-		
 	}
 ?>

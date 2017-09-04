@@ -18,6 +18,21 @@
 	
 	<!-- Importar fonte do Google -->
 	<link href="http://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic" rel="stylesheet">
+
+	<!-- Verificar se as senhas digitadas são iguais -->
+	<script>
+		function validarSenha(){
+			senha = document.usuario.senha.value
+			senha2 = document.usuario.senha2.value
+ 
+		if (senha != senha2){
+			alert ('Senhas diferentes');
+			usuario.senha.focus;
+			return false;
+		}
+			
+		}
+	</script>
 </head>
 
 <body>
@@ -35,7 +50,7 @@
 	
 	
 	<section>
-		<form name="usuario" action="envia_form_cadastro.php" method="POST">
+		<form name="usuario" action="actions/envia_form_cadastro.php" method="POST">
 			<h1>Cadastro do usuário:</h1>
 			<br />
 			<div id="cadastro">
@@ -52,19 +67,16 @@
 			</ul>
 				
 			<ul>
-				<li>Telefone:</li>
-				<li><input type="tel" class="formulario" name="telefone" placeholder="(00)00000-0000" title="Informe o seu telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/></li>
+				<li>Telefone: *</li>
+				<li><input type="tel" class="formulario" name="telefone" placeholder=" (00) 00000-0000" title="Informe o seu telefone" required/></li>
 			</ul>
 			
-			
-			<!-- No banco deixei o genero como opcional, pois é boolean. E tbm criei esse input abaixo só para testes. -->
 			<ul>
-				<li>Gênero:</li>
-				<li><input type="text" class="formulario" name="genero" title="Informe o seu genero" required/></li>
-			</ul>
+				<li>Gênero: *
+				<input type="radio" name="genero" value="masculino" checked /> Masculino
+				<input type="radio" name="genero" value="feminino" /> Feminino</li>
+			</ul>	
 			
-			
-				
 			<ul>
 				<li>Data de nascimento: *
 				<input type="date" id="formulario2" name="dataNascimento" title="Informe sua data de nascimento" required/></li>
@@ -72,7 +84,7 @@
 				
 			<ul>
 				<li>E-mail: *</li>
-				<li><input type="email" class="formulario" name="email" placeholder="email@exemplo.com.br" title="Informe o seu e-mail" required/></li>
+				<li><input type="email" class="formulario" name="email" placeholder=" email@exemplo.com.br" title="Informe o seu e-mail" required/></li>
 			</ul>
 				
 			<ul>
@@ -80,15 +92,14 @@
 				<li><input type="password" class="formulario" minlength="8" maxlength="15" name="senha" title="Defina a sua senha" required/></li>
 			</ul>
 			
-			<!-- Vou deixar o confirmar senha como comnentário, até conseguir validar ele com a senha digitada
 			<ul>
 				<li>Confirme sua senha: *</li>
-				<li><input type="password" class="formulario" minlength="8" maxlength="15" title="Confirme a sua senha" required/></li>
-			</ul>-->
+				<li><input type="password" class="formulario" minlength="8" maxlength="15" title="Confirme a sua senha" name="senha2" required/></li>
+			</ul>
 			
 			<ul>
 				<li>Web site:</li>
-				<li><input type="text" class="formulario" name="website" title="Informe o seu web site" required/></li>
+				<li><input type="text" class="formulario" name="website" title="Informe o seu web site"/></li>
 			</ul>
 			
 			</fieldset>
@@ -123,7 +134,7 @@
 				
 			<br/>
 			
-			<input class="btn" type="submit" value="Cadastrar"/>
+			<input class="btn" type="submit" value="Cadastrar" onClick="return validarSenha()"/>
 			
 			<!--
 			<a href="cadastro.html" class="btn">Cadastrar</a><br><br><br>
