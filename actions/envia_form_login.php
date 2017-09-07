@@ -7,8 +7,9 @@ $senha = $_POST['senha'];
 
 include('../conexaobanco/conexao_banco.php');
 
-$resultado = mysql_query("select * from pessoa where email='$email' and senha='$senha'");
+$resultado = mysql_query("select * from pessoa where email='$email' and senha='md5($senha)'");
 
+// Verificando se o usuário é o admin
 if ($email === 'nandorech@outlook.com'){
 	
 	if (mysql_num_rows($resultado)>0){
@@ -19,7 +20,7 @@ if ($email === 'nandorech@outlook.com'){
 		unset($_SESSION['email']);
 		unset($_SESSION['senha']);
 		echo "<script>alert('Usuário e/ou senha inválidos')
-			window.location='index.html';
+			window.location='location:..\index.php';
 		</script>";
 	}
 	
@@ -33,7 +34,7 @@ if ($email === 'nandorech@outlook.com'){
 		unset($_SESSION['email']);
 		unset($_SESSION['senha']);
 		echo "<script>alert('Usuário e/ou senha inválidos')
-			window.location='index.html';
+			window.location='location:..\index.php';
 		</script>";
 	}
 	

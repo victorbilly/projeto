@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="envia_form_cadastro.php" server="ftp.gamercollection.com.br/gamercollection/" local="131488589559041859" remote="131488606200000000" Dst="1" />
-<file name="envia_form_login.php" server="ftp.gamercollection.com.br/gamercollection/" local="131488554933176402" remote="131488606200000000" Dst="1" />
-<file name="envia_form_contato.php" server="ftp.gamercollection.com.br/gamercollection/" local="131481953206590820" remote="131488606200000000" Dst="1" />
+<file name="envia_form_cadastro.php" server="ftp.gamercollection.com.br/gamercollection/" local="131492648820796326" remote="131492649600000000" Dst="1" />
+<file name="envia_form_login.php" server="ftp.gamercollection.com.br/gamercollection/" local="131492654033077476" remote="131492653800000000" Dst="1" />
+<file name="envia_form_contato.php" server="ftp.gamercollection.com.br/gamercollection/" local="131481953206590820" remote="131492649600000000" Dst="1" />
+<file name="envia_form_cadastro_acessorio.php" server="ftp.gamercollection.com.br/gamercollection/" local="131489639888473366" remote="131492649600000000" Dst="1" />
+<file name="envia_form_cadastro_jogo.php" server="ftp.gamercollection.com.br/gamercollection/" local="131490503501775978" remote="131492649600000000" Dst="1" />
+<file name="envia_form_cadastro_plataforma.php" server="ftp.gamercollection.com.br/gamercollection/" local="131490505254612736" remote="131492649600000000" Dst="1" />
 </dwsync>

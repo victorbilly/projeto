@@ -37,7 +37,7 @@
 <body>
 	<header>
 		<div class="banner">
-			<span id="logo_pages"><a href="index.html" class="link">GamerCollection</a></span>
+			<span id="logo_pages"><a href="index.php" class="link">GamerCollection</a></span>
 		</div>
 	</header>
 	
@@ -84,15 +84,15 @@
 		 		</tr>
 		 		
 		 		<tr height="30">
-		 			<td>Novo Jogo</td>
+		 			<td><a href="cadastro_jogo.html">Novo Jogo</a></td>
 		 		</tr>
 		 		
 		 		<tr height="30">
-		 			<td>Novo Acessório</td>
+		 			<td><a href="cadastro_acessorio.html">Novo Acessório</a></td>
 		 		</tr>
 		 		
 		 		<tr height="30">
-		 			<td>Novo Console</td>
+		 			<td><a href="cadastro_plataforma.html">Nova Plataforma</a>
 		 		</tr>
 		 		
 		 	</table>

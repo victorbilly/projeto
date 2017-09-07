@@ -30,7 +30,6 @@
 			usuario.senha.focus;
 			return false;
 		}
-			
 		}
 	</script>
 </head>
@@ -38,7 +37,7 @@
 <body>
 	<header>
 		<div class="banner">
-			<span id="logo_pages"><a href="index.html" class="link">GamerCollection</a></span>
+			<span id="logo_pages"><a href="index.php" class="link">GamerCollection</a></span>
 		</div>
 	</header>
 	
@@ -146,7 +145,7 @@
 			<br/>
 	
 			<hr>
-			<p>Copyright &copy; - by Fernando Rech</p>
+			<p>TCC ADS 2017 - by Fernando Rech - #UPF</p>
 		
 	</section>
 	

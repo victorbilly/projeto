@@ -14,7 +14,7 @@
 	include('../conexaobanco/conexao_banco.php');
 
 	$sql = mysql_query("INSERT INTO pessoa(nome, telefone, genero, dataNascimento, email, senha, website, nomeColecao, plataformaFavorita, jogoFavorito)
-	VALUES ('$nome', '$telefone', '$genero', '$dataNascimento', '$email', '$senha', '$website', '$nomeColecao', '$plataformaFavorita', '$jogoFavorito' )");
+	VALUES ('$nome', '$telefone', '$genero', '$dataNascimento', '$email', md5('$senha'), '$website', '$nomeColecao', '$plataformaFavorita', '$jogoFavorito' )");
 
 	if ($sql){ //Verificar se foi cadastrado
 		

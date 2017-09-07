@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- Informa que o documento foi criado em HTML5 -->
 
@@ -59,8 +63,7 @@
 					Senha:<input type="password" name="senha" class="formlogin"><br />
 					<input type="checkbox"><span id="manter_conectado">Mantenha-me conectado</span>
 					<br/><br/>
-					<input type="submit" value="Entrar"/>
-					<!--<a href="#" class="btn">Entrar</a>-->
+					<input type="submit" value="Entrar" name="btnlogin"/>
 				</form>	
 			</div>
 		</div>
@@ -78,7 +81,7 @@
 		
 		<hr>
 		
-		<p>Copyright &copy; - by Fernando Rech</p>
+		<p>TCC ADS 2017 - by Fernando Rech - #UPF</p>
 		
 	</section>
 	
