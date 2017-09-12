@@ -135,9 +135,6 @@
 			
 			<input class="btn" type="submit" value="Cadastrar" onClick="return validarSenha()"/>
 			
-			<!--
-			<a href="cadastro.html" class="btn">Cadastrar</a><br><br><br>
-			-->
 			</div>
 			
 			</form>

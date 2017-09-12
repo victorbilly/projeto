@@ -63,7 +63,7 @@ session_start();
 					Senha:<input type="password" name="senha" class="formlogin"><br />
 					<input type="checkbox"><span id="manter_conectado">Mantenha-me conectado</span>
 					<br/><br/>
-					<input type="submit" value="Entrar" name="btnlogin"/>
+					<input type="submit" class="btn" value="Entrar" name="btnlogin"/>
 				</form>	
 			</div>
 		</div>
