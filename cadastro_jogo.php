@@ -24,7 +24,7 @@
 <body>
 	<header>
 		<div class="banner">
-			<span id="logo_pages"><a href="index.php" class="link">GamerCollection</a></span>
+			<span id="logo_pages"><a href="http://gamercollection.com.br/colecao.php" class="link">GamerCollection</a></span>
 		</div>
 	</header>
 	
@@ -36,8 +36,8 @@
 	
 	
 	<section>
-		<form name="acessorio" action="actions/envia_form_cadastro_plataforma.php" method="POST">
-			<h1>Cadastro de plataforma:</h1>
+		<form name="acessorio" action="actions/envia_form_cadastro_jogo.php" method="POST">
+			<h1>Cadastro de jogo:</h1>
 			<br />
 			<div id="cadastro">
 				
@@ -45,31 +45,35 @@
      		<legend>Dados cadastrais</legend>
 			<ul>
 				<li>Nome: *</li>
-				<li><input type="text" class="formulario" name="nome" title="Informe o seu nome da plataforma" required/></li>
+				<li><input type="text" class="formulario" name="nome" title="Informe o nome nome do jogo" required/></li>
 			</ul>
 			
 			<ul>
-				<li>Foto da plataforma: <input type="button" value="Carregar foto"></li>
+				<li>Foto do jogo: <input type="button" value="Carregar foto"></li>
 			</ul>
 							
 			<ul>
-				<li>Modelo: *</li>
-				<li><input type="text" class="formulario" name="" title="Informe o modelo da plataforma" required/></li>
+				<li>Plataforma: *</li>
+				<li><input type="text" class="formulario" name="plataforma" title="Informe a plataforma do jogo" required/></li>
 			</ul>
 			
 			<ul>
-				<li>Especificações técnicas: *</li>
-				<li><input type="text" class="formulario" name="" title="Informe as especificações da plataforma" required/></li>
-			</ul>
-				
-			<ul>
 				<li>Edição: *</li>
-				<li><input type="text" class="formulario" name="" title="Informe a edição da plataforma" /></li>
-			</ul>
+				<li><input type="text" class="formulario" name="edicao" title="Informe a edição do jogo" required/></li>
+			</ul>	
+			
+			<ul>
+				<li>Mídia: *
+				<input type="radio" name="midia" value="cd" checked /> CD
+				<input type="radio" name="midia" value="cartucho" /> Cartucho
+				<input type="radio" name="midia" value="digital" /> Digital</li>
+			</ul>			
+				
+				
 				
 			<ul>
 				<li>Descrição: *</li>
-				<li><input type="text" class="formulario" name="" title="Descreva a plataforma" /></li>
+				<li><input type="text" class="formulario" name="descricao" title="Descreva o jogo" /></li>
 			</ul>
 						
 			<br/><br/><br/>
@@ -80,7 +84,7 @@
 			<br/>
 			
 			<input class="btn" type="submit" value="Cadastrar"/>
-			
+
 			</div>
 			
 			</form>

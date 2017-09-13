@@ -1,20 +1,14 @@
 	<?php
 	$nome = $_POST['nome'];
-	$telefone = $_POST['telefone'];
-	$genero = $_POST['genero'];
-	$dataNascimento = $_POST['dataNascimento'];
-	$email = $_POST['email'];
-	$senha = $_POST['senha'];
-	$website = $_POST['website'];
-	$nomeColecao = $_POST['nomeColecao'];
-	$plataformaFavorita = $_POST['plataformaFavorita'];
-	$jogoFavorito = $_POST['jogoFavorito'];
-
+	$plataforma = $_POST['plataforma'];
+	$edicao = $_POST['edicao'];
+	$midia = $_POST['midia'];
+	$descricao = $_POST['descricao'];
 
 	include('../conexaobanco/conexao_banco.php');
 
-	$sql = mysql_query("INSERT INTO pessoa(nome, telefone, genero, dataNascimento, email, senha, website, nomeColecao, plataformaFavorita, jogoFavorito)
-	VALUES ('$nome', '$telefone', '$genero', '$dataNascimento', '$email', '$senha', '$website', '$nomeColecao', '$plataformaFavorita', '$jogoFavorito' )");
+	$sql = mysql_query("INSERT INTO jogo(nome, plataforma, edicao, midia, descricao)
+	VALUES ('$nome', '$plataforma', '$edicao', '$midia', '$descricao')");
 
 	if ($sql){ //Verificar se foi cadastrado
 		

@@ -80,15 +80,15 @@
 		 		</tr>
 		 		
 		 		<tr height="30">
-		 			<td><a href="cadastro_jogo.html">Novo Jogo</a></td>
+		 			<td><a href="cadastro_jogo.php">Novo Jogo</a></td>
 		 		</tr>
 		 		
 		 		<tr height="30">
-		 			<td><a href="cadastro_acessorio.html">Novo Acessório</a></td>
+		 			<td><a href="cadastro_acessorio.php">Novo Acessório</a></td>
 		 		</tr>
 		 		
 		 		<tr height="30">
-		 			<td><a href="cadastro_plataforma.html">Nova Plataforma</a>
+		 			<td><a href="cadastro_plataforma.php">Nova Plataforma</a>
 		 		</tr>
 		 		
 		 	</table>

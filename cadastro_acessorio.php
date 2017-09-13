@@ -24,7 +24,7 @@
 <body>
 	<header>
 		<div class="banner">
-			<span id="logo_pages"><a href="index.php" class="link">GamerCollection</a></span>
+			<span id="logo_pages"><a href="http://gamercollection.com.br/colecao.php" class="link">GamerCollection</a></span>
 		</div>
 	</header>
 	
@@ -54,29 +54,29 @@
 							
 			<ul>
 				<li>Plataforma: *</li>
-				<li><input type="email" class="formulario" name="text" title="Informe a plataforma do acessório" required/></li>
+				<li><input type="text" class="formulario" name="plataforma" title="Informe a plataforma do acessório" required/></li>
 			</ul>
 			
 			<ul>
 				<li>Restrição de jogos: *
-				<input type="radio" name="genero" value="sim" checked /> Não
-				<input type="radio" name="genero" value="nao" /> Sim</li>
+				<input type="radio" name="restricao" value="sim" checked /> Não
+				<input type="radio" name="restricao" value="nao" /> Sim</li>
 			</ul>	
 			
 				
 			<ul>
 				<li>Quais?</li>
-				<li><input type="text" class="formulario" name="" title="Informe os jogos para o acessório" required/></li>
+				<li><input type="text" class="formulario" name="qualRestricao" title="Informe os jogos para o acessório"/></li>
 			</ul>
 				
 			<ul>
 				<li>Edição: *</li>
-				<li><input type="text" class="formulario" name="" title="Informe a edição do acessório" /></li>
+				<li><input type="text" class="formulario" name="edicao" title="Informe a edição do acessório" /></li>
 			</ul>
 				
 			<ul>
 				<li>Descrição: *</li>
-				<li><input type="text" class="formulario" name="" title="Descreva o acessório" /></li>
+				<li><input type="text" class="formulario" name="descricao" title="Descreva o acessório" /></li>
 			</ul>
 						
 			<br/><br/><br/>
